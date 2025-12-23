@@ -5,7 +5,7 @@ published: 2025-12-04
 tags: [Minecraft, Cheats, GhostClient, dll]
 type: post
 category: Cheats
-image: ./xray.png
+image: ./writeup/xray.png
 showTableOfContents: true
 ---
 
@@ -36,7 +36,7 @@ Then we will look at which class we want to edit. Here, for my xray, I want to e
 
 To get the `Block.class` you can either unzip the JAR file, or if you want, you can also dump all classes with some dynamic class dumper (you can make your own or use [this one](https://www.unknowncheats.me/forum/downloads.php?do=file&id=27701) - you can use Process Hacker to inject the DLL).
 
-![dump](./dump.png)
+![dump](./writeup/dump.png)
 
 If your client is not on Forge it might have some obfuscated methods and class names. If so, you can check:
 
@@ -528,7 +528,7 @@ ReloadChunks() {
 And there we have it — with the class patches, the native bridge, the JVM runtime overwrite, and the chunk-reload system, we now have everything needed to build a fully functional xray for Minecraft.  
 From here, you can extend the logic, implement reach, ESP, ...
 
-![xray](./xray.png)
+![xray](./writeup/xray.png)
 
 Feel free to dm me on discord : ``jsthop3``
 
